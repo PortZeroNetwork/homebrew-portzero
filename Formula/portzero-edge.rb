@@ -6,7 +6,7 @@ class PortzeroEdge < Formula
   # version + sha256 on each prerelease. See docs/dev/prerelease-channel.md.
   desc "Prerelease (edge) build of portzero — for testing only"
   homepage "https://portzero.cloud"
-  version "1.0.5-rc.112"
+  version "1.0.5-rc.113"
   license "GPL-3.0-or-later"
 
   # Both formulae install the `portzero`/`portzero-tray` binaries, so only one
@@ -17,11 +17,11 @@ class PortzeroEdge < Formula
   on_macos do
     on_arm do
       url "https://github.com/PortZeroNetwork/portzero-local/releases/download/v#{version}/portzero-darwin-arm64.tar.gz"
-      sha256 "7ed3b820d93c1b7117bd903ae062b719dc5b32b3ea95d84a4ea78513cd8c6997" # arm64
+      sha256 "af724ede5f4673166de7e566f274ed2afe53830df208660da7bb6151d0b22964" # arm64
     end
     on_intel do
       url "https://github.com/PortZeroNetwork/portzero-local/releases/download/v#{version}/portzero-darwin-amd64.tar.gz"
-      sha256 "ab9b507143b436e7ff2b7e5802a8741f3c63086e254181f560758e2e9fdeea86" # x86_64
+      sha256 "d281e5d0af06de9a83e5af55b322fae9b452e728e108fdc6011b29fd0e2f41a4" # x86_64
     end
   end
 
