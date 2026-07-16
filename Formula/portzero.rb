@@ -1,17 +1,17 @@
 class Portzero < Formula
   desc "Eliminate port conflicts in local dev environments with virtual NIC port forwarding"
   homepage "https://portzero.cloud"
-  version "1.0.9"
+  version "1.0.10"
   license "GPL-3.0-or-later"
 
   on_macos do
     on_arm do
       url "https://github.com/PortZeroNetwork/portzero-local/releases/download/v#{version}/portzero-darwin-arm64.tar.gz"
-      sha256 "6f2732660c803f890f4f220767affbc0c84b3f9a32db86677357187124a06162" # arm64
+      sha256 "ba0c6ab4c3e713d8c094d0a76adc95692f7a02aaad7509efcd3aae55c945d4a0" # arm64
     end
     on_intel do
       url "https://github.com/PortZeroNetwork/portzero-local/releases/download/v#{version}/portzero-darwin-amd64.tar.gz"
-      sha256 "4b12713c0e88220bd4e222fcaa5caf0f14ad4045c9fe5abac9eb3c2013d20de4" # x86_64
+      sha256 "92e496efa5232cca1c420d4b0bd7cd5f4d871cfa32b1f5c65156106f433e16ad" # x86_64
     end
   end
 
