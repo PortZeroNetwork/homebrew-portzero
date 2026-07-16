@@ -5,9 +5,9 @@ class Vmkit < Formula
   # public later, switch to the release-tarball url + sha256 form.
   url "git@github.com:PortZeroNetwork/vmkit.git",
       using:    :git,
-      tag:      "v0.2.0",
-      revision: "29cea71c89c09b1c0c1ad58b51aaf211c589585e"
-  version "0.2.0"
+      tag:      "v0.2.1",
+      revision: "b14427ef03fea49e0a081e8a7ef726f0e15e5a93"
+  version "0.2.1"
   license "GPL-3.0-or-later"
 
   depends_on :macos
@@ -30,6 +30,6 @@ class Vmkit < Formula
   end
 
   test do
-    assert_match "0.2.0", shell_output("#{bin}/vmkit version")
+    assert_match "0.2.1", shell_output("#{bin}/vmkit version")
   end
 end
